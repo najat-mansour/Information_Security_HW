@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.navigation-button {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.navigation-button:hover {
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+.home-navigation-button {
+    background-color: lightcoral;
+}
+
+.other-feature-navigation-button { 
+    background-color: lightgreen;
+}
+
+.step-description-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: solid 2px black;
+    width: 450px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.step-description-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.step-description-container h4 {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: dashed 2px black;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.upload-image-container, .upload-file-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+input[type="file"] {
+    display: none; 
+}
+
+.control-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.control-button {
+    color: white;
+    background-color: #4F46E5;
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.control-button:hover {
+    color: black;
+    background-color: #FDC72E;
+}
+
+.upload-image-container > img, .upload-file-container > textarea {
+    width: 350px;
+    height: 250px;
+}
+
+.lsbs-and-operations-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.lsbs-and-operations-buttons  label {
+    font-weight: bold;
+    font-style: italic;
+}
+
+input[type="number"] {
+    margin-right: 50px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    border: solid 2px black
+}
+
+.main-operation-button {
+    color: white;
+    background-color: black;
+    width: 90px;
+    margin: 0px 5px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+}
+
+.lsbs-and-operations-buttons-sub-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.lsbs-and-operations-buttons-sub-div:first-child {
+    position: relative;
+    left: 30px;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.result-section .main-operation-button {
+    margin-bottom: 20px;
+}

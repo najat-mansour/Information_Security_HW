@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restore a Message</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/restore.css">
+
+    <script defer type="text/javascript" src="../js/restore.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <button class="navigation-button home-navigation-button" id="btnGoToHome">Home</button>
+        <h1>Restore a Message</h1>
+        <button class="navigation-button other-feature-navigation-button" id="btnGoToHide">Hide a Message</button>
+    </header>
+
+    <div class="inputs-section">
+        <div class="upload-section">
+            <!-- Upload the image -->
+            <div class="upload-image-container">
+                <!-- Step 1 Label -->
+                <div class="step-description-container">
+                    <img src="../assets/imgs/star.png" alt="Step 1">
+                    <h4>Load an image to restore the message from it!</h4>
+                </div>
+
+                <!-- Image Uploader -->
+                <input type="file" accept="image/bmp" id="imgUploader" />
+
+                <!-- Control Buttons -->
+                <div class="control-buttons-container">
+                    <label for="imgUploader" class="control-button">Load</label>
+                    <label class="control-button" id="btnClearImage">Clear</label>
+                </div>
+
+                <!-- Showing the image -->
+                <img src="../assets/imgs/no_image.png" id="imgViewer"/>
+            </div>
+        </div>
+
+        <!-- Determining LSBs and Main Operation Buttons -->
+        <div class="lsbs-and-operations-buttons">
+            <div class="lsbs-and-operations-buttons-sub-div">
+                <label for="txtLSBs">Number of LSB: </label>
+                <input type="number" min="1" max="3" value="1" id="txtLSBs">
+            </div>
+
+            <div class="lsbs-and-operations-buttons-sub-div">
+                <button class="main-operation-button" id="btnRestore">Restore</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-section">
+        <!-- Result Label -->
+        <div class="step-description-container">
+            <img src="../assets/imgs/result.png" alt="Step 1">
+            <h4>The Restored Text</h4>
+        </div>
+        <textarea readonly></textarea>
+    </div>
+</body>
+
+</html>
